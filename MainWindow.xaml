@@ -1,0 +1,22 @@
+﻿<Window x:Class="PasswordManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordManager"
+        mc:Ignorable="d"
+        Title="PasswordManager Login" Height="500" Width="350">
+    <Grid Margin="10" RenderTransformOrigin="0.47,0.668">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="usernameLabel" Content="Username:" Margin="60,247,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="UsernameText" HorizontalAlignment="Center" Margin="0,273,0,0" TextWrapping="Wrap" Width="200" RenderTransformOrigin="0.33,0.726" VerticalAlignment="Top"/>
+        <Label x:Name="passwordLabel" Content="Password:" HorizontalAlignment="Left" Margin="60,310,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordText" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" Width="200" />
+        <Image x:Name="mainImage" HorizontalAlignment="Left" Height="100" Margin="112,112,0,0" VerticalAlignment="Top" Width="100" Source="/475-4751783_vector-key-transparent-key-vector-png-png-download.png"/>
+        <Button x:Name="loginButton" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFE2E9FF" Width="200" Content="Login" Grid.Row="1" Click="loginButton_Click" Margin="0,20,0,0"/>
+        <Button x:Name="RegisterBtn" Content="Register" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top" Height="24" Width="122" Click="registerButton_Click" Background="#FFE2E9FF"/>
+    </Grid>
+</Window>

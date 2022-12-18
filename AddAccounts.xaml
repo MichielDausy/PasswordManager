@@ -1,0 +1,19 @@
+﻿<Window x:Class="PasswordManager.AddAccounts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordManager"
+        mc:Ignorable="d"
+        Title="AddAccounts" Height="450" Width="300">
+    <Grid>
+        <Label x:Name="accountLabel" Content="Account Name:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,149,0,0"/>
+        <TextBox x:Name="AccountText" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap" Width="200" RenderTransformOrigin="0.33,0.726" VerticalAlignment="Top"/>
+        <Label x:Name="passwordLabel" Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50,0,0,0"/>
+        <PasswordBox x:Name="passwordText" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="200" />
+        <Label x:Name="passwordLabel_Copy" Content="Confirm Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,260,0,0"/>
+        <PasswordBox x:Name="passwordText_Copy" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Width="200" />
+        <Button x:Name="Submit" Content="Submit" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="200" Click="Submit_Click"/>
+        <Label x:Name="Create_new_acount" Content="Create new account" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>
